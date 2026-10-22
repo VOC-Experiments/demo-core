@@ -15,6 +15,14 @@
         "architectures": [
           "amd64"
         ]
+      },
+      {
+        "distribution": "rocky",
+        "suite": "9",
+        "image": "rockylinux/rockylinux:9",
+        "architectures": [
+          "x86_64"
+        ]
       }
     ],
     "openwrt": {
