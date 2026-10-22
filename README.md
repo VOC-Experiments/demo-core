@@ -19,3 +19,5 @@ Configured on 22 October 2026: repository Actions secrets `PACKAGE_CAPTURE_APP_P
 ## Own SDK development exports
 
 The captured source hook exports only leaf files/symlinks from this recipe's SDK staging record and its own provides file, plus its own recipe. Shared include/lib directories and foreign provides records are excluded. Legitimate prerequisite development exports still import through the generic checksum-verified path.
+
+Live D02/D07: this same-version moved tag changes the pinned prerequisite identity while prior join work is still running. Earlier captures and evidence remain immutable.
