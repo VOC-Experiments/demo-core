@@ -7,3 +7,5 @@ Live validation: this moved-tag revision captures the complete coordinator platf
 Live validation: this capture uses the SDK-compatible package_ci feed name.
 
 Live validation: this capture exercises SDK-relative development exports through the real CLI.
+
+Live validation: this capture pins the corrected sandbox usign public key.
