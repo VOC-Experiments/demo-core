@@ -3,28 +3,16 @@
   "package": "demo-core",
   "depends_on": [],
   "build": {
-    "native": "ci/package/native.sh",
     "openwrt": "ci/package/openwrt.sh"
   },
   "matrix": {
-    "linux": [
-      {
-        "distribution": "debian",
-        "suite": "trixie",
-        "image": "debian:trixie",
-        "architectures": [
-          "amd64"
-        ]
-      }
-    ],
     "openwrt": {
       "releases": [
         "24.10.8",
         "25.12.5"
       ],
       "targets": {
-        "x86_64": "x86/64",
-        "aarch64_generic": "armsr/armv8"
+        "x86_64": "x86/64"
       }
     }
   }
