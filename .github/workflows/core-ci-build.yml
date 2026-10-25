@@ -20,7 +20,7 @@ permissions:
   actions: read
 jobs:
   build:
-    uses: VOC-Experiments/ci-coordinator/.github/workflows/core-ci-build.yml@fa07d7847964286e81bb1d7b71634b2d73d4e1ad
+    uses: VOC-Experiments/ci-coordinator/.github/workflows/core-ci-build.yml@47ecaa83870723a7f79eb0a8a0d260b5e6cec2ef
     with:
       execution: ${{ inputs.execution }}
       attempt: ${{ inputs.attempt }}
