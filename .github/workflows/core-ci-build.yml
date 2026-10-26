@@ -1,5 +1,5 @@
 name: core-ci source build
-run-name: core-ci build ${{ inputs.attempt }} ${{ inputs.assignment_sha256 }}
+run-name: Build ${{ fromJSON(inputs.assignment).label }}
 on:
   workflow_dispatch:
     inputs:
@@ -20,7 +20,7 @@ permissions:
   actions: read
 jobs:
   build:
-    uses: VOC-Experiments/ci-coordinator/.github/workflows/core-ci-build.yml@d210b36e46b4d5041828bf7b32f67d5638570142
+    uses: VOC-Experiments/ci-coordinator/.github/workflows/core-ci-build.yml@8aa1158081d7b532b32bb44bfcfa03d21fd918ca
     with:
       execution: ${{ inputs.execution }}
       attempt: ${{ inputs.attempt }}
