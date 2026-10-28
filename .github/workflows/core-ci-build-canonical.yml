@@ -1,0 +1,28 @@
+name: core-ci source build
+run-name: Build ${{ fromJSON(inputs.assignment).label }}
+on:
+  workflow_dispatch:
+    inputs:
+      execution:
+        required: true
+        type: string
+      attempt:
+        required: true
+        type: string
+      assignment_sha256:
+        required: true
+        type: string
+      assignment:
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+jobs:
+  build:
+    uses: VOC-Experiments/ci-coordinator/.github/workflows/core-ci-build.yml@4bbf551c597c681bf26e93b4c946936f1302ef3d
+    with:
+      execution: ${{ inputs.execution }}
+      attempt: ${{ inputs.attempt }}
+      assignment_sha256: ${{ inputs.assignment_sha256 }}
+      assignment: ${{ inputs.assignment }}
